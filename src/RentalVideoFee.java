@@ -19,8 +19,8 @@ public class RentalVideoFee {
         System.out.println("レンタル期間:" + _days + "日");
         System.out.println("種類:" + (_isNew ? "新作": "旧作"));
 
-        // 計算料金を置いておく変数、基本料金は一日100円、新作の場合は基本料金は2倍
-        int tmp = 100 * (_isNew ? 2: 1);
+        // 計算料金を置いておく変数、基本料金は一日100円、新作の場合は基本料金は250円
+        int tmp = (_isNew ? 250: 100);
         // レンタル日数分の料金計算
         tmp = tmp * _days;
         // 1週間以上のレンタルは長期料金の100円を加算
