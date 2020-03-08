@@ -16,7 +16,7 @@ class RentalVideoFeeTest {
         System.setOut(new PrintStream(out));
 
         target.calcFee();
-        assertEquals(this.printResult(name, days, isNew, 200), out.toString());
+        assertEquals(this.printResult(name, days, isNew, 250), out.toString());
     }
 
     @Test
