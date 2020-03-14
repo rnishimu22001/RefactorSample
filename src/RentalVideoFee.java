@@ -15,7 +15,7 @@ public class RentalVideoFee {
 
     void calcFee() {
         printVideoInformation();
-        System.out.println("レンタル料金は " + totalFee() + "円です。");
+        printFee(totalFee());
     }
 
     int totalFee() {
@@ -42,5 +42,9 @@ public class RentalVideoFee {
         System.out.println("映画名:" + _videoName);
         System.out.println("レンタル期間:" + _days + "日");
         System.out.println("種類:" + (_isNew ? "新作": "旧作"));
+    }
+
+    void printFee(int fee) {
+        System.out.println("レンタル料金は " + fee + "円です。");
     }
 }
